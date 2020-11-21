@@ -14,14 +14,14 @@
         <h1 class="sign-in__header">Welcome to Simon Game</h1>
         <form action="/">
           <input type="text" id="username" class="sign-in__input" placeholder="Enter a username">
-          <button type="submit" id="start-btn" class="btn">Start</button>
+          <button type="submit" id="start-btn" class="btn" disabled>Start</button>
         </form>
-        <button id="high-schores-btn" class="btn">High Scores</button>
+        <button id="high-scores-btn" class="btn">High Scores</button>
       </div>
     </section>
     <!-- GAME -->
     <section id="game" class="hide">
-      <h1 class="game__header">Ready to Start!</h1>
+      <h1 id="game-title" class="game__header">Ready to Start!</h1>
       <div class="game__wrapper">
         <div class="game__row">
           <div type="button" id="green" class="game__btn green"></div>
@@ -53,7 +53,7 @@
           <li class="high-scores__listItem">User - 10</li>
           <li class="high-scores__listItem">User - 10</li>
         </ul>
-        <button class="btn">Home</button>
+        <button id="home-btn" class="btn">Home</button>
       </div>
     </section>
   </div>

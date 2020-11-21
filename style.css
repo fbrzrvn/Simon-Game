@@ -65,18 +65,43 @@ form > input {
   border: 10px solid black;
   display: inline-block;
   border-radius: 20%;
+  cursor: pointer;
 }
 .green {
   background: #34A853;
+  transition: background 200ms ease-in-out;
+}
+.green:hover {
+  background: #0EC44D;
 }
 .red {
   background: #EA4335;
+  transition: background 200ms ease-in-out;
+}
+.red:hover {
+  background: #DB3237;
 }
 .yellow {
   background: #FBBC05;
+  transition: background 200ms ease-in-out;
+}
+.yellow:hover {
+  background: #F7C008;
 }
 .blue {
   background: #4285FA;
+  transition: background 200ms ease-in-out;
+}
+.blue:hover {
+  background: #4986F0;
+}
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+.game-over {
+  background-color: #DB3237;
+  opacity: 0.8;
 }
 
 
@@ -115,6 +140,7 @@ form > input {
   .game__btn {
     width: 200px;
     height: 200px;
+    margin: .5em;
   }
   .game-over__header {
     font-size: 3rem;
