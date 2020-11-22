@@ -69,35 +69,22 @@ form > input {
 }
 .green {
   background: #34A853;
-  transition: background 200ms ease-in-out;
 }
-.green:hover {
-  background: #0EC44D;
-}
+
 .red {
   background: #EA4335;
-  transition: background 200ms ease-in-out;
 }
-.red:hover {
-  background: #DB3237;
-}
+
 .yellow {
   background: #FBBC05;
-  transition: background 200ms ease-in-out;
 }
-.yellow:hover {
-  background: #F7C008;
-}
+
 .blue {
   background: #4285FA;
-  transition: background 200ms ease-in-out;
-}
-.blue:hover {
-  background: #4986F0;
 }
 .pressed {
   box-shadow: 0 0 20px white;
-  background-color: grey;
+  background-color: #bbb;
 }
 .game-over {
   background-color: #DB3237;
@@ -111,8 +98,8 @@ form > input {
   margin-bottom: .25em;
 }
 .final-score {
-  font-size: 1.5em;
-  margin: .5em auto 2em;
+  font-size: 5em;
+  margin-bottom: .5em;
 }
 
 .high-scores__header {
@@ -146,7 +133,7 @@ form > input {
     font-size: 3rem;
   }
   .final-score {
-    font-size: 2em;
+    font-size: 6em;
   }
   .high-scores__header {
     font-size: 3rem;

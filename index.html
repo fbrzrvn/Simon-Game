@@ -8,21 +8,10 @@
 </head>
 <body>
   <div class="container">
-    <!-- SIGN-IN -->
-    <section id="sign-in" class="">
-      <div class="flex-center">
-        <h1 class="sign-in__header">Welcome to Simon Game</h1>
-        <form action="/">
-          <input type="text" id="username" class="sign-in__input" placeholder="Enter a username">
-          <button type="submit" id="start-btn" class="btn" disabled>Start</button>
-        </form>
-        <button id="high-scores-btn" class="btn">High Scores</button>
-      </div>
-    </section>
     <!-- GAME -->
-    <section id="game" class="hide">
-      <h1 id="game-title" class="game__header">Ready to Start!</h1>
-      <div class="game__wrapper">
+    <section id="game" class="">
+      <h1 id="game-title" class="game__header">Press a Key to Start</h1>
+      <div class="flex-center">
         <div class="game__row">
           <div type="button" id="green" class="game__btn green"></div>
           <div type="button" id="red" class="game__btn red"></div>
@@ -38,9 +27,13 @@
       <div class="flex-center">
         <h1 class="game-over__header">Game Over!</h1>
         <p>Your Score</p>
-        <h2 id="score" class="final-score">N</h2>
+        <h2 id="score" class="final-score"></h2>
+        <form action="/">
+          <input type="text" id="username" class="sign-in__input" placeholder="Enter a username">
+          <button type="submit" id="save-btn" class="btn" disabled>Save</button>
+        </form>
         <button id="play-again-btn" class="btn">Play Again</button>
-        <button id="high-schores-btn" class="btn">High Scores</button>
+        <button id="high-scores-btn" class="btn">High Scores</button>
       </div>
     </section>
     <!-- HIGH-SCORES -->
@@ -53,7 +46,7 @@
           <li class="high-scores__listItem">User - 10</li>
           <li class="high-scores__listItem">User - 10</li>
         </ul>
-        <button id="home-btn" class="btn">Home</button>
+        <button id="play-again-btn" class="btn">Play Again</button>
       </div>
     </section>
   </div>
