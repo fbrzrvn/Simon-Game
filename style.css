@@ -48,13 +48,9 @@ form > input {
   display: none;
 }
 
-.sign-in__header {
-  font-size: 2.5rem;
-  text-align: center;
-  margin-bottom: .5em;
-}
 
 .game__header {
+  font-family: 'Press Start 2P', cursive;
   font-size: 2rem;
   text-align: center;
   margin-bottom: 1em;
@@ -70,15 +66,12 @@ form > input {
 .green {
   background: #34A853;
 }
-
 .red {
   background: #EA4335;
 }
-
 .yellow {
   background: #FBBC05;
 }
-
 .blue {
   background: #4285FA;
 }
@@ -93,28 +86,37 @@ form > input {
 
 
 .game-over__header {
+  font-family: 'Press Start 2P', cursive;
   font-size: 2.5rem;
   text-align: center;
-  margin-bottom: .25em;
+  margin-bottom: .5em;
 }
 .final-score {
-  font-size: 5em;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3em;
   margin-bottom: .5em;
+  margin-top: .1em;
 }
 
 .high-scores__header {
+  font-family: 'Press Start 2P', cursive;
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: .5em;
 }
-.high-scores__list {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 2em;
+.high-scores__scores {
+  font-family: 'Press Start 2P', cursive;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 3em;
 }
-.high-scores__listItem {
-  margin: .25em;
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: .5em;
 }
+
 
 
 @media screen and (min-width: 768px) {
@@ -133,7 +135,7 @@ form > input {
     font-size: 3rem;
   }
   .final-score {
-    font-size: 6em;
+    font-size: 5em;
   }
   .high-scores__header {
     font-size: 3rem;

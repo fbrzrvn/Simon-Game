@@ -7,7 +7,9 @@ const input = document.getElementById('username');
 const saveBtn = document.getElementById('save-btn');
 const highScoresBtn = document.getElementById('high-scores-btn');
 const highScoresSection =document.getElementById('high-scores');
+const highScoreLIst = document.getElementById('high-score-list');
 const playAgainBtn = document.getElementById('play-again-btn');
+const playAgainBtnHighScore = document.getElementById('play-again-btn-hs');
 
 let buttonColors = ['red', 'blue', 'green', 'yellow'];
 let gamePattern = [];
@@ -57,10 +59,21 @@ saveBtn.addEventListener('click', (e) => {
 highScoresBtn.addEventListener('click', () => {
   gameOverSection.classList.toggle('hide');
   highScoresSection.classList.toggle('hide');
+  highScoreLIst.innerHTML += `
+      <div class="row">
+        <h2>${user.name}</h2>
+        <h2>${user.score}</h2>
+      </div>`;
 })
 
 playAgainBtn.addEventListener('click', () => {
   gameOverSection.classList.toggle('hide');
+  gameSection.classList.toggle('hide');
+  startOver();
+})
+
+playAgainBtnHighScore.addEventListener('click', () => {
+  highScoresSection.classList.toggle('hide');
   gameSection.classList.toggle('hide');
   startOver();
 })

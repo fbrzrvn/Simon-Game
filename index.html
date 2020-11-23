@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Simon Game</title>
 </head>
@@ -40,13 +42,8 @@
     <section id="high-scores" class="hide">
       <div class="flex-center">
         <h1 class="high-scores__header">High Scores</h1>
-        <ul id="high-scores-list" class="high-scores__list">
-          <li class="high-scores__listItem">User - 10</li>
-          <li class="high-scores__listItem">User - 10</li>
-          <li class="high-scores__listItem">User - 10</li>
-          <li class="high-scores__listItem">User - 10</li>
-        </ul>
-        <button id="play-again-btn" class="btn">Play Again</button>
+        <div class="high-scores__scores" id="high-score-list"></div>
+        <button id="play-again-btn-hs" class="btn">Play Again</button>
       </div>
     </section>
   </div>
